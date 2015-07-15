@@ -22,7 +22,6 @@
   "dependencies": {},
   "devDependencies": {
     "balanced-ternary": "*",
-    "pad": "^0.1.0",
     "tape": "^4.0.0"
   }
 }
