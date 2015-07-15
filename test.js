@@ -2,28 +2,8 @@
 
 var test = require('tape');
 var bts2n = require('balanced-ternary').bts2n;
-var lst = require('./').lst;
 var shl = require('./').shl;
 var shr = require('./').shr;
-
-test('least-significant trit', function(t) {
-  t.equal(lst(0), 0);
-  t.equal(lst(1), 1);
-  t.equal(lst(-1), -1);
-
-  t.equal(lst(bts2n('10')), 0);
-  t.equal(lst(bts2n('1i')), -1);
-  t.equal(lst(bts2n('11')), 1);
-
-  t.equal(lst(bts2n('i0')), 0);
-  t.equal(lst(bts2n('ii')), -1);
-  t.equal(lst(bts2n('i1')), 1);
-
-  t.equal(lst(bts2n('101i10i10i1i')), -1);
-  t.equal(lst(bts2n('i10i00000i10')), 0);
-  t.equal(lst(bts2n('010i0iiii011')), 1);
-  t.end();
-});
 
 test('shift left zero', function(t) {
   t.equal(shl(0, 0), 0);
