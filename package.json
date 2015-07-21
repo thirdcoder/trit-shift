@@ -1,7 +1,7 @@
 {
   "name": "trit-shift",
   "description": "trit shifting operations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "shift.js",
   "repository": {
     "type": "git",
