@@ -5,7 +5,7 @@
   "main": "shift.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:/trit-shift.git"
+    "url": "git@github.com:thirdcoder/trit-shift.git"
   },
   "keywords": [
     "ternary",
@@ -21,7 +21,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "balanced-ternary": "*",
+    "balanced-ternary": "^1.0.0",
     "tape": "^4.0.0"
-  }
+  },
+  "LICENSE": "MIT"
 }
