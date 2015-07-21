@@ -7,6 +7,7 @@ var shr = require('./').shr;
 
 test('shift left zero', function(t) {
   t.equal(shl(0, 0), 0);
+  t.equal(shl(1, 0), 3);
   t.equal(shl(1, 0), bts2n('10'));
   t.equal(shl(-1, 0), bts2n('i0'));
   t.equal(shl(bts2n('111iii'), 0), bts2n('111iii0'));
@@ -14,6 +15,7 @@ test('shift left zero', function(t) {
 });
 
 test('shift left carry', function(t) {
+  t.equal(shl(1, -1), 2);
   t.equal(shl(bts2n('i01'), 0), bts2n('i010'));
   t.equal(shl(bts2n('100'), -1), bts2n('100i'));
   t.equal(shl(bts2n('111iii'), 1), bts2n('111iii1'));
@@ -35,6 +37,7 @@ test('shift left repeated', function(t) {
 });
 
 test('shift right', function(t) {
+  t.equal(shr(3, 5, 0), 1);
   t.equal(shr(bts2n('10'), 5, 0), bts2n('1'));
   t.equal(shr(bts2n('100'), 5, 0), bts2n('10'));
   t.equal(shr(bts2n('i0'), 5, 0), bts2n('i'));
