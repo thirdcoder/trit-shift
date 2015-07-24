@@ -2,6 +2,9 @@
 
 Trit shifting operations
 
+[![Build Status](https://travis-ci.org/thirdcoder/trit-shift.svg?branch=master)](https://travis-ci.org/thirdcoder/trit-shift)
+[![npm version](https://badge.fury.io/js/trit-shift.svg)](https://www.npmjs.com/package/trit-shift)
+
 Usage:
 
     var shl = require('trit-shift').shl;
